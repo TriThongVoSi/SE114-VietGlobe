@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/news_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/btnBookmark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_image_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bookmark_border_white_24dp" />
+
+        <TextView
+            android:id="@+id/text_name_publisher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="?attr/primaryDescriptionColor"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_news"
+            tools:text="The Washington Post" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/sf_bold"
+            android:maxLines="3"
+            android:textColor="?attr/primaryTitleColor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/text_name_publisher"
+            app:layout_constraintStart_toStartOf="@id/text_name_publisher"
+            app:layout_constraintTop_toBottomOf="@id/text_name_publisher"
+            tools:text="Nationals' cornerstones come up big in series-opening win over" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/sf_regular"
+            android:maxLines="2"
+            android:textColor="?attr/primaryDescriptionColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/text_title"
+            app:layout_constraintStart_toStartOf="@id/text_title"
+            app:layout_constraintTop_toBottomOf="@id/text_title"
+            tools:text="James Wood and CJ Abrams, acquired in the Juan Soto mega-trade, led the way for the Nationals on Monday." />
+
+        <TextView
+            android:id="@+id/text_chip_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/sf_regular"
+            android:textColor="?attr/primaryDateColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text_description"
+            app:layout_constraintTop_toBottomOf="@id/text_description"
+            tools:text="2025-06-24" />
+
+        <ImageView
+            android:id="@+id/btnSummarize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_list_alt_gray_24"
+            android:contentDescription="@string/summary"
+            app:layout_constraintBottom_toBottomOf="@id/text_chip_date"
+            app:layout_constraintEnd_toStartOf="@id/btnTranslate"
+            app:layout_constraintTop_toTopOf="@id/text_chip_date" />
+
+        <ImageView
+            android:id="@+id/btnTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_translate"
+            android:contentDescription="@string/translate"
+            app:layout_constraintBottom_toBottomOf="@id/text_chip_date"
+            app:layout_constraintEnd_toStartOf="@id/btnShare"
+            app:layout_constraintTop_toTopOf="@id/text_chip_date" />
+
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_share_gray_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_chip_date"
+            app:layout_constraintEnd_toEndOf="@id/text_description"
+            app:layout_constraintTop_toTopOf="@id/text_chip_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

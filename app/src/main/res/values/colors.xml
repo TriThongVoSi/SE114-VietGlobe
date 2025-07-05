@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--New VietGlobe Theme-->
+    <color name="very_peri">#6667AB</color>
+    <color name="very_peri_dark">#52538A</color>
+
+    <!--App Theme-->
+    <color name="colorPrimary">@color/very_peri</color>
+    <color name="colorPrimaryDark">@color/very_peri_dark</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <!--Light Color-->
+    <color name="primaryTitleColor">#2A2A2A</color>
+    <color name="primaryDescriptionColor">#8C000000</color>
+    <color name="primaryDateColor">#59000000</color>
+    <color name="primaryBackgroundColor">@color/md_white_1000</color>
+    <color name="primaryCardBackgroundColor">@color/md_white_1000</color>
+    <color name="primaryButtonColor">@color/very_peri</color>
+    <color name="primaryChipBackgroundColor">#F5F5F5</color>
+    <color name="primarySearchBackgroundColor">#F5F5F5</color>
+
+    <!--Dark Color-->
+    <color name="primaryTitleColorDark">#FFFFFF</color>
+    <color name="primaryDescriptionColorDark">#D9FFFFFF</color>
+    <color name="primaryDateColorDark">#8CFFFFFF</color>
+    <color name="primaryBackgroundColorDark">#121212</color>
+    <color name="primaryCardBackgroundColorDark">#1F1F1F</color>
+    <color name="primaryButtonColorDark">@color/very_peri</color>
+
+    <!--Night Theme Colors-->
+    <color name="colorPrimaryNight">@color/very_peri</color>
+    <color name="colorPrimaryDarkNight">@color/very_peri_dark</color>
+    <color name="colorAccentNight">#FFFFFF</color>
+    <color name="primaryTitleColorNight">#FFFFFF</color>
+    <color name="primaryDescriptionColorNight">#D9FFFFFF</color>
+    <color name="primaryDateColorNight">#8CFFFFFF</color>
+    <color name="primaryBackgroundColorNight">#121212</color>
+    <color name="primaryCardBackgroundColorNight">#1F1F1F</color>
+    <color name="primaryChipBackgroundColorNight">#1F1F1F</color>
+    <color name="primarySearchBackgroundColorNight">#1F1F1F</color>
+
+    <color name="transparent_dark">#80000000</color>
+
+    <!--red-->
+    <color name="red">#E42B22</color>
+
+    <!--md colors-->
+    <color name="md_orange_300">#FFB74D</color>
+    <color name="md_orange_600">#FB8C00</color>
+    <color name="md_orange_800">#EF6C00</color>
+    <color name="md_orange_900">#E65100</color>
+    <color name="md_blue_A200">#448AFF</color>
+    <color name="md_white_1000">#FFFFFF</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="dark_blue">#405467</color>
+    <color name="transparent_orange">#80FB8C00</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="darker_gray">#A9A9A9</color>
+
+</resources>
